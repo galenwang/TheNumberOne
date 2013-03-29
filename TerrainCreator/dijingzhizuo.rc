@@ -1,0 +1,661 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\dijingzhizuo.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\dijingzhizuo.ico"
+IDI_Cancel              ICON                    "img\\Cancel.ico"
+IDI_Open                ICON                    "img\\Close.ico"
+IDI_Go                  ICON                    "img\\Go.ico"
+IDI_ok                  ICON                    "img\\Ok.ico"
+IDI_Close               ICON                    "img\\Open.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 dijingzhizuo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "TerrainCreator，V1.2.25.20130226 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012 - 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIJINGZHIZUO_DIALOG DIALOGEX 0, 0, 462, 346
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TerrianCreator V1.2.25.20130226"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",TCS_VERTICAL | TCS_BUTTONS | TCS_MULTILINE | TCS_MULTISELECT | WS_TABSTOP,18,74,437,259,WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         172,IDC_STATIC_1,"Static",SS_BITMAP,33,76,69,23
+    CONTROL         156,IDC_STATIC_4,"Static",SS_BITMAP,33,102,69,23
+    CONTROL         161,IDC_STATIC_6,"Static",SS_BITMAP,33,128,69,23
+END
+
+IDD_OPERENV DIALOGEX 0, 0, 383, 289
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "LOD级数：",IDC_STATIC,25,165,35,8
+    PUSHBUTTON      "批量生成",IDC_PiLiang_Button,278,205,57,37
+    LISTBOX         IDC_LIST_TERRAIN,10,186,262,77,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,13,23,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,85,13,250,1
+    LTEXT           "地景源文件管理",IDC_STATIC,32,10,49,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,158,21,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,55,158,273,1
+    LTEXT           "输入参数",IDC_STATIC,29,154,28,8
+    EDITTEXT        IDC_EDIT_LOD,73,163,89,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TREE_TERRAIN,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,10,22,263,122
+    PUSHBUTTON      "刷新",IDC_REFRESH_TERRAIN,278,22,57,37
+    PUSHBUTTON      "重置",IDC_RESET_TERRAIN,278,106,57,37
+END
+
+IDD_RUNWAYPROP DIALOGEX 0, 0, 338, 265
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "长度（ft）：",IDC_STATIC,18,30,40,8
+    LTEXT           "宽度（ft）：",IDC_STATIC,18,61,40,8
+    LTEXT           "航向角（degrees）：",IDC_STATIC,18,87,67,8
+    LTEXT           "经度（degrees）：",IDC_STATIC,88,31,60,8
+    EDITTEXT        IDC_Lenght_EDIT,22,42,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Width_EDIT,22,71,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Heading_EDIT,22,97,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Longitude_EDIT,93,43,40,12,ES_AUTOHSCROLL
+    LTEXT           "纬度（degrees）：",IDC_STATIC,87,62,60,8
+    EDITTEXT        IDC_Latitude_EDIT,93,72,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DispThr1_EDIT,171,58,40,12,ES_AUTOHSCROLL
+    LTEXT           "跑道入口（ft）：",IDC_STATIC,166,44,54,8
+    LTEXT           "跑道入口（ft）：",IDC_STATIC,250,43,54,8
+    LTEXT           "停止道（ft）：",IDC_STATIC,169,76,47,8
+    LTEXT           "停止道（ft）：",IDC_STATIC,254,75,47,8
+    EDITTEXT        IDC_Stopway1_EDIT,171,89,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DispThr2_EDIT,256,57,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Stopway2_EDIT,256,88,40,12,ES_AUTOHSCROLL
+    LTEXT           "跑道灯：",IDC_STATIC,34,139,28,8
+    LTEXT           "滑行道灯：",IDC_STATIC,34,189,35,8
+    LTEXT           "进场灯：",IDC_STATIC,34,164,28,8
+    COMBOBOX        IDC_RunwayLight1_COMB,29,148,48,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ApproachLight1_COMB,29,173,48,120,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GlideslopeLight1_COMB,29,198,48,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "跑道灯：",IDC_STATIC,114,138,28,8
+    LTEXT           "滑行道灯：",IDC_STATIC,114,188,35,8
+    LTEXT           "进场灯：",IDC_STATIC,114,163,28,8
+    COMBOBOX        IDC_RunwayLight2_COMB,114,147,48,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_ApproachLight2_COMB,114,172,48,121,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GlideslopeLight2_COMB,114,197,48,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "跑道材质：",IDC_STATIC,216,131,35,8
+    LTEXT           "标记：",IDC_STATIC,216,148,22,8
+    LTEXT           "路肩：",IDC_STATIC,216,165,22,8
+    LTEXT           "粗糙度：",IDC_STATIC,216,182,28,8
+    COMBOBOX        IDC_SurfaceType_COMB,263,130,48,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO9,263,147,48,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_Should_COMB,263,164,48,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT10,263,181,48,12,ES_AUTOHSCROLL
+    CONTROL         "拥有距离标志牌",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,218,211,8,8
+    PUSHBUTTON      "提交",IDC_OK,99,228,50,18
+    PUSHBUTTON      "取消",IDC_cancel,176,228,50,18
+    LTEXT           "跑道高度：",IDC_STATIC,87,88,35,8
+    EDITTEXT        IDC_RunwayAlt_EDIT,93,97,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,13,21,22,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,61,21,263,1
+    LTEXT           "几何",IDC_STATIC,40,17,15,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,19,123,21,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,67,123,113,1
+    LTEXT           "灯光",IDC_STATIC,46,119,15,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,193,123,20,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,241,123,90,1
+    LTEXT           "表面",IDC_STATIC,221,119,15,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,194,201,19,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,242,201,89,1
+    LTEXT           "标记",IDC_STATIC,222,197,15,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,21,133,8,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,56,133,33,1
+    LTEXT           "末端1",IDC_STATIC,33,129,19,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,102,133,7,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,137,133,32,1
+    LTEXT           "末端2",IDC_STATIC,114,129,19,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,168,31,7,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,203,31,32,1
+    LTEXT           "末端1",IDC_STATIC,180,27,19,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,249,31,6,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,284,31,31,1
+    LTEXT           "末端2",IDC_STATIC,261,27,19,8
+    LTEXT           "拥有距离标志牌",IDC_STATIC,235,210,49,8
+END
+
+IDD_LATLON DIALOGEX 0, 0, 383, 290
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "文化信息生成",IDC_CREATE_BUTTON,278,205,57,37
+    LISTBOX         IDC_LIST_CULTURE,10,186,262,77,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,13,23,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,100,13,235,1
+    LTEXT           "文化信息源文件管理",IDC_STATIC,32,10,63,8
+    CONTROL         "",IDC_TREE_CULTURE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,10,22,263,122
+    PUSHBUTTON      "刷新",IDC_REFRESH_CULTURE,278,22,57,37
+    PUSHBUTTON      "重置",IDC_RESET_CULTURE,278,106,57,37
+    EDITTEXT        IDC_ROADWIDE,227,154,40,14,ES_AUTOHSCROLL
+    LTEXT           "文化信息道路宽度：",IDC_STATIC,153,156,63,8
+    EDITTEXT        IDC_LIGHTDISTANCE,102,154,40,14,ES_AUTOHSCROLL
+    LTEXT           "文化信息路灯间距：",IDC_STATIC13,25,154,63,8
+    CONTROL         "",IDC_CHECK_LAMP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,155,16,10
+    LTEXT           "文化信息树灯密度：",IDC_STATIC,25,170,63,8
+    EDITTEXT        IDC_WOODCOVERAGE,102,169,40,14,ES_AUTOHSCROLL
+END
+
+IDD_PROGRESSDIALOG DIALOGEX 0, 0, 267, 147
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话框"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,161,126,50,14
+    PUSHBUTTON      "取消",IDCANCEL,210,126,50,14
+    PUSHBUTTON      "Button1",IDC_BUTTON1,187,60,50,14
+END
+
+IDD_GENERALAPT DIALOGEX 0, 0, 383, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "跑道号：",IDC_STATIC1,21,34,28,8
+    LTEXT           "跑道宽度：",IDC_STATIC2,169,34,35,8
+    LTEXT           "跑道长度：",IDC_STATIC3,169,52,35,8
+    LTEXT           "停机坪位置：",IDC_STATIC4,169,69,42,8
+    LTEXT           "跑道纬度：",IDC_STATIC5,21,52,35,8
+    LTEXT           "跑道经度：",IDC_STATIC6,21,70,35,8
+    LTEXT           "跑道高度：",IDC_STATIC7,21,88,35,8
+    LTEXT           "ICAO：",IDC_STATIC8,169,89,24,8
+    EDITTEXT        IDC_shRunwayID,60,33,54,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_shRunwayWidth,217,30,54,57,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_shBuildingPosition,217,67,54,56,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_shRunwayLength,217,49,54,56,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_dLatitude,60,49,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_dLongtitude,60,67,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_fAltitude,60,85,54,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_cICAO,233,86,15,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "生成",IDC_OK,285,145,43,28
+    LTEXT           "GEN",IDC_STATIC9,214,87,14,8
+    LISTBOX         IDC_LIST1,16,145,256,121,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,11,11,273,1
+    GROUPBOX        "",IDC_STATIC,14,21,268,85
+    CONTROL         "制作通用机场",IDC_CHECK_AIRPORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,14,57,10
+END
+
+IDD_3DBUILD DIALOGEX 0, 0, 403, 304
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,12,38,293,141,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "批量生成",IDC_Batch_Button,124,182,67,40
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,13,340,1
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,19,9,9
+    LTEXT           "重新制作基础地景",IDC_STATIC,37,19,65,9
+END
+
+IDD_PROFILE DIALOGEX 0, 0, 365, 300
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "编辑",IDC_EDIT,7,253,67,40
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,18,340,232
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,13,344,1
+    PUSHBUTTON      "保存",IDC_SAVE,191,253,67,40
+    PUSHBUTTON      "删除",IDC_DELETE,97,253,67,40
+    PUSHBUTTON      "刷新",IDC_REFRESH,279,253,67,40
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "陕西瑞德仿真科技股份有限公司"
+            VALUE "FileDescription", "场景生成软件"
+            VALUE "FileVersion", "1.2.0.20121105"
+            VALUE "InternalName", "Terrain.exe"
+            VALUE "LegalCopyright", "陕西瑞德仿真科技股份有限公司保留所有权利。"
+            VALUE "OriginalFilename", "TerrainCreator.exe"
+            VALUE "ProductName", "场景生成软件"
+            VALUE "ProductVersion", "1.2.0.20121105"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIJINGZHIZUO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 455
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 339
+        HORZGUIDE, 81
+    END
+
+    IDD_OPERENV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        VERTGUIDE, 10
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_RUNWAYPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 331
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_LATLON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_PROGRESSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_GENERALAPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 373
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_3DBUILD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 396
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 297
+    END
+
+    IDD_PROFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_RUNWAYPROP DLGINIT
+BEGIN
+    IDC_RunwayLight1_COMB, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_RunwayLight1_COMB, 0x403, 14, 0
+0x6445, 0x6567, 0x6c20, 0x6769, 0x7468, 0x6e69, 0x0067, 
+    IDC_RunwayLight1_COMB, 0x403, 5, 0
+0x4552, 0x4c49, "\000" 
+    IDC_RunwayLight1_COMB, 0x403, 16, 0
+0x6543, 0x746e, 0x7265, 0x6c20, 0x6769, 0x7468, 0x6e69, 0x0067, 
+    IDC_RunwayLight1_COMB, 0x403, 12, 0
+0x5a54, 0x6c20, 0x6769, 0x7468, 0x6e69, 0x0067, 
+    IDC_ApproachLight1_COMB, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 4, 0
+0x4c41, 0x0053, 
+    IDC_ApproachLight1_COMB, 0x403, 7, 0
+0x4c41, 0x4653, 0x4920, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 8, 0
+0x4c41, 0x4653, 0x4920, 0x0049, 
+    IDC_ApproachLight1_COMB, 0x403, 4, 0
+0x4143, 0x004c, 
+    IDC_ApproachLight1_COMB, 0x403, 7, 0
+0x4143, 0x204c, 0x4949, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 5, 0
+0x444c, 0x4e49, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 5, 0
+0x414d, 0x534c, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 6, 0
+0x414d, 0x534c, 0x0046, 
+    IDC_ApproachLight1_COMB, 0x403, 5, 0
+0x534e, 0x4454, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 6, 0
+0x414d, 0x534c, 0x0052, 
+    IDC_ApproachLight1_COMB, 0x403, 9, 0
+0x494d, 0x204c, 0x564f, 0x4e52, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 6, 0
+0x444f, 0x4c41, 0x0053, 
+    IDC_ApproachLight1_COMB, 0x403, 5, 0
+0x4152, 0x4c49, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 5, 0
+0x4153, 0x534c, "\000" 
+    IDC_ApproachLight1_COMB, 0x403, 6, 0
+0x4153, 0x534c, 0x0046, 
+    IDC_ApproachLight1_COMB, 0x403, 6, 0
+0x5353, 0x4c41, 0x0046, 
+    IDC_ApproachLight1_COMB, 0x403, 6, 0
+0x5353, 0x4c41, 0x0052, 
+    IDC_ApproachLight1_COMB, 0x403, 6, 0
+0x5353, 0x4c41, 0x0053, 
+    IDC_GlideslopeLight1_COMB, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_GlideslopeLight1_COMB, 0x403, 5, 0
+0x4156, 0x4953, "\000" 
+    IDC_GlideslopeLight1_COMB, 0x403, 5, 0
+0x4150, 0x4950, "\000" 
+    IDC_GlideslopeLight1_COMB, 0x403, 9, 0
+0x5353, 0x204c, 0x4150, 0x4950, "\000" 
+    IDC_RunwayLight2_COMB, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_RunwayLight2_COMB, 0x403, 14, 0
+0x6445, 0x6567, 0x6c20, 0x6769, 0x7468, 0x6e69, 0x0067, 
+    IDC_RunwayLight2_COMB, 0x403, 5, 0
+0x4552, 0x4c49, "\000" 
+    IDC_RunwayLight2_COMB, 0x403, 16, 0
+0x6543, 0x746e, 0x7265, 0x6c20, 0x6769, 0x7468, 0x6e69, 0x0067, 
+    IDC_RunwayLight2_COMB, 0x403, 12, 0
+0x5a54, 0x6c20, 0x6769, 0x7468, 0x6e69, 0x0067, 
+    IDC_ApproachLight2_COMB, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 4, 0
+0x4c41, 0x0053, 
+    IDC_ApproachLight2_COMB, 0x403, 7, 0
+0x4c41, 0x4653, 0x4920, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 8, 0
+0x4c41, 0x4653, 0x4920, 0x0049, 
+    IDC_ApproachLight2_COMB, 0x403, 4, 0
+0x4143, 0x004c, 
+    IDC_ApproachLight2_COMB, 0x403, 7, 0
+0x4143, 0x204c, 0x4949, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 5, 0
+0x444c, 0x4e49, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 5, 0
+0x414d, 0x534c, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 6, 0
+0x414d, 0x534c, 0x0046, 
+    IDC_ApproachLight2_COMB, 0x403, 5, 0
+0x534e, 0x4454, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 6, 0
+0x414d, 0x534c, 0x0052, 
+    IDC_ApproachLight2_COMB, 0x403, 9, 0
+0x494d, 0x204c, 0x564f, 0x4e52, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 6, 0
+0x444f, 0x4c41, 0x0053, 
+    IDC_ApproachLight2_COMB, 0x403, 5, 0
+0x4152, 0x4c49, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 5, 0
+0x4153, 0x534c, "\000" 
+    IDC_ApproachLight2_COMB, 0x403, 6, 0
+0x4153, 0x534c, 0x0046, 
+    IDC_ApproachLight2_COMB, 0x403, 6, 0
+0x5353, 0x4c41, 0x0046, 
+    IDC_ApproachLight2_COMB, 0x403, 6, 0
+0x5353, 0x4c41, 0x0052, 
+    IDC_ApproachLight2_COMB, 0x403, 6, 0
+0x5353, 0x4c41, 0x0053, 
+    IDC_GlideslopeLight2_COMB, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_GlideslopeLight2_COMB, 0x403, 5, 0
+0x4156, 0x4953, "\000" 
+    IDC_GlideslopeLight2_COMB, 0x403, 5, 0
+0x4150, 0x4950, "\000" 
+    IDC_GlideslopeLight2_COMB, 0x403, 9, 0
+0x5353, 0x204c, 0x4150, 0x4950, "\000" 
+    IDC_SurfaceType_COMB, 0x403, 8, 0
+0x7341, 0x6870, 0x6c61, 0x0074, 
+    IDC_SurfaceType_COMB, 0x403, 9, 0
+0x6f43, 0x636e, 0x6572, 0x6574, "\000" 
+    IDC_SurfaceType_COMB, 0x403, 5, 0
+0x7554, 0x6672, "\000" 
+    IDC_SurfaceType_COMB, 0x403, 5, 0
+0x6944, 0x7472, "\000" 
+    IDC_SurfaceType_COMB, 0x403, 7, 0
+0x7247, 0x7661, 0x6c65, "\000" 
+    IDC_SurfaceType_COMB, 0x403, 6, 0
+0x6157, 0x6574, 0x0072, 
+    IDC_SurfaceType_COMB, 0x403, 12, 0
+0x7244, 0x2079, 0x616c, 0x656b, 0x6562, 0x0064, 
+    IDC_SurfaceType_COMB, 0x403, 6, 0
+0x744f, 0x6568, 0x0072, 
+    IDC_COMBO9, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_COMBO9, 0x403, 7, 0
+0x6956, 0x7573, 0x6c61, "\000" 
+    IDC_COMBO9, 0x403, 14, 0
+0x6f4e, 0x2d6e, 0x7270, 0x6365, 0x7369, 0x6f69, 0x006e, 
+    IDC_COMBO9, 0x403, 10, 0
+0x7250, 0x6365, 0x7369, 0x6f69, 0x006e, 
+    IDC_COMBO9, 0x403, 8, 0
+0x6548, 0x696c, 0x6170, 0x0064, 
+    IDC_Should_COMB, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_Should_COMB, 0x403, 8, 0
+0x7341, 0x6870, 0x6c61, 0x0074, 
+    IDC_Should_COMB, 0x403, 9, 0
+0x6f43, 0x636e, 0x6572, 0x6574, "\000" 
+    0
+END
+
+IDD_GENERALAPT DLGINIT
+BEGIN
+    IDC_shRunwayWidth, 0x403, 4, 0
+0x3033, 0x006d, 
+    IDC_shRunwayWidth, 0x403, 4, 0
+0x3534, 0x006d, 
+    IDC_shRunwayWidth, 0x403, 4, 0
+0x3036, 0x006d, 
+    IDC_shBuildingPosition, 0x403, 9, 0
+0xfabb, 0xa1b3, 0xf3d7, 0xdfb1, "\000" 
+    IDC_shBuildingPosition, 0x403, 9, 0
+0xfabb, 0xa1b3, 0xd2d3, 0xdfb1, "\000" 
+    IDC_shRunwayLength, 0x403, 3, 0
+0x4d30, "\000" 
+    IDC_shRunwayLength, 0x403, 6, 0
+0x3531, 0x3030, 0x004d, 
+    IDC_shRunwayLength, 0x403, 6, 0
+0x3032, 0x3030, 0x004d, 
+    IDC_shRunwayLength, 0x403, 6, 0
+0x3532, 0x3030, 0x004d, 
+    IDC_shRunwayLength, 0x403, 6, 0
+0x3033, 0x3030, 0x004d, 
+    IDC_shRunwayLength, 0x403, 6, 0
+0x3533, 0x3030, 0x004d, 
+    IDC_shRunwayLength, 0x403, 6, 0
+0x3034, 0x3030, 0x004d, 
+    IDC_shRunwayLength, 0x403, 6, 0
+0x3534, 0x3030, 0x004d, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "img\\Terrain.bmp"
+IDB_BITMAP9             BITMAP                  "img\\tongyongjichang1.bmp"
+IDB_BITMAP10            BITMAP                  "img\\tongyongjichang2.bmp"
+IDB_BITMAP11            BITMAP                  "img\\wenhuaxinxi1.bmp"
+IDB_BITMAP12            BITMAP                  "img\\wenhuaxinxi2.bmp"
+IDB_BITMAP13            BITMAP                  "img\\yunxinghuanjing1.bmp"
+IDB_BITMAP14            BITMAP                  "img\\yunxinghuanjing2.bmp"
+IDB_BITMAP15            BITMAP                  "img\\profile1.bmp"
+IDB_BITMAP16            BITMAP                  "img\\profile2.bmp"
+IDB_BITMAP1             BITMAP                  "img\\bj1.bmp"
+IDB_BITMAP3             BITMAP                  "img\\changjingchengcheng2.bmp"
+IDB_BITMAP4             BITMAP                  "img\\changjingshengcheng1.bmp"
+IDB_BITMAP8             BITMAP                  "img\\sanweijianzhu1.bmp"
+IDB_BITMAP17            BITMAP                  "img\\sanweijianzhu2.bmp"
+IDB_BITMAP5             BITMAP                  "img\\bitmap5.bmp"
+IDB_BITMAP6             BITMAP                  "img\\bitmap6.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    VK_F2,          ID_ACCELERATOR1,        VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TerrainCreator(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\dijingzhizuo.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
